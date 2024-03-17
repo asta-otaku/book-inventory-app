@@ -5,6 +5,7 @@ const Input = ({ searchBooks }: { searchBooks: any }) => {
 
   // create a function to handle submit
   const handleSubmit = (e: any) => {
+    if (search === "") return;
     e.preventDefault();
     setTimeout(
       () =>
