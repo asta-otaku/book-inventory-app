@@ -6,6 +6,10 @@ const Input = ({ searchBooks }: { searchBooks: any }) => {
   // create a function to handle submit
   const handleSubmit = (e: any) => {
     e.preventDefault();
+    window.scrollTo({
+      top: 700,
+      behavior: "smooth",
+    });
     searchBooks(search);
   };
   return (
